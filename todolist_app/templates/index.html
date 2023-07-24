@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  <title>Home -Task</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container text-center">
+    <div class="row mt-5">
+      <div class="col">
+        <img src="{% static 'images/stickynotes.jpg' %}" class ="rounded-lg shadow-lg" alt="Notes" width="360" height="250">
+      </div>
+      <div class="col">
+        <img src="{% static 'images/stickynotes-2.jpg' %}" class ="rounded-lg shadow-lg" alt="Notes2" width="360" height="250">
+      </div>
+      <div class="col">
+        <img src="{% static 'images/stickynotes-1.jpg' %}" class ="rounded-lg shadow-lg" alt="Notes1" width="360" height="250">
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+  <div clas ="row">
+    <div class="col-md-10 offset-md-1">
+      <center><p class="h1 text-danger">789 Survival</p></center>
+      <center><p class="h4 mt-3">Entertainment</p></center>
+      <center><p class="h5">Production</p></center>
+      <center><a href={%url 'todolist'%}><button type="button" class="btn btn-dark btn-lg shadow mt-3">Join!</button></a></center>
+    </div>
+  </div>
+{% endblock content %}
