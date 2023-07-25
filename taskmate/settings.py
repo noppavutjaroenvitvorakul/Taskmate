@@ -19,7 +19,7 @@ SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = env('DJANGO_DEBUG')
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://"]
+#CSRF_TRUSTED_ORIGINS = ["https://"]
 
 
 # Application definition
